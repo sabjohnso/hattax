@@ -7,3 +7,5 @@ macro(hattax_add_test test_name exe_name)
     GTest::gtest_main)
   add_test(${test_name} ${exe_name})
 endmacro()
+
+hattax_add_test(easy easy_test easy_test.cpp)
